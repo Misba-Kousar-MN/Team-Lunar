@@ -1,0 +1,44 @@
+2026-06-26 21:50:21 [ERROR]: Error: Can't find / on this server!
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\app.js:63:8
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+2026-06-26 21:50:21 [ERROR]: Error: Can't find /favicon.ico on this server!
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\app.js:63:8
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+2026-06-26 22:04:51 [ERROR]: Error: Can't find / on this server!
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\app.js:64:8
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+2026-06-26 22:04:51 [ERROR]: Error: Can't find /favicon.ico on this server!
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\app.js:64:8
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
