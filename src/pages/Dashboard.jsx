@@ -17,9 +17,8 @@ export default function Dashboard({ data, onReanalyze, onGoHome }) {
   const stats = useMemo(() => {
     if (!data) return { total: 0, genuine: 0, fake: 0 };
     
-    // Sometimes backend returns percentage, sometimes absolute count. Let's compute.
-    const total = data.reviews?.length || 0;
-    const genuineCount = data.reviews?.filter(r => r.label === 'Genuine').length || 0;
+    const total = data.analysis?.length || 0;
+    const genuineCount = data.analysis?.filter(r => r.prediction === 'Real').length || 0;
     const fakeCount = total - genuineCount;
 
     return {
@@ -31,20 +30,21 @@ export default function Dashboard({ data, onReanalyze, onGoHome }) {
 
   // Filter and search reviews
   const filteredReviews = useMemo(() => {
-    if (!data?.reviews) return [];
+    if (!data?.analysis) return [];
     
-    return data.reviews.filter(review => {
+    return data.analysis.filter(review => {
       // 1. Tab Filter
-      if (filter === 'genuine' && review.label !== 'Genuine') return false;
-      if (filter === 'fake' && review.label !== 'Fake') return false;
+      if (filter === 'genuine' && review.prediction !== 'Real') return false;
+      if (filter === 'fake' && review.prediction !== 'Fake') return false;
 
       // 2. Search Text
       if (searchTerm.trim() !== '') {
         const term = searchTerm.toLowerCase();
+        const reasonText = Array.isArray(review.reason) ? review.reason.join(' ') : (review.reason || '');
         return (
-          review.text.toLowerCase().includes(term) ||
-          review.reason.toLowerCase().includes(term) ||
-          review.keywords.some(kw => kw.toLowerCase().includes(term))
+          (review.review || '').toLowerCase().includes(term) ||
+          reasonText.toLowerCase().includes(term) ||
+          (review.keywords || []).some(kw => kw.toLowerCase().includes(term))
         );
       }
 
@@ -60,6 +60,8 @@ export default function Dashboard({ data, onReanalyze, onGoHome }) {
   };
 
   if (!data) return null;
+
+  const percentage = data.trustScore * 10;
 
   return (
     <div className="flex-1 px-4 py-8 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full space-y-8 dark:bg-slate-950 transition-colors duration-300">
@@ -98,6 +100,13 @@ export default function Dashboard({ data, onReanalyze, onGoHome }) {
               </a>
             )}
           </div>
+
+          {data.recommendation && (
+            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-2 font-medium">
+              <span className="font-bold text-slate-700 dark:text-slate-200">Recommendation: </span>
+              {data.recommendation}
+            </p>
+          )}
         </div>
 
         {/* Quick Re-analyze inputs */}
@@ -122,10 +131,10 @@ export default function Dashboard({ data, onReanalyze, onGoHome }) {
       {/* Main Charts & Meter Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Metric Card 1: circular score */}
-        <TrustMeter score={data.trust_score} />
+        <TrustMeter score={percentage} />
 
         {/* Metric Card 2: donut break down */}
-        <ReviewPieChart genuine={data.genuine} fake={data.fake} />
+        <ReviewPieChart genuine={data.statistics.realReviews} fake={data.statistics.fakeReviews} />
 
         {/* Metric Card 3: numerical summary statistics */}
         <div className="flex flex-col p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/50 dark:border-slate-800/50 shadow-sm justify-between transition-all duration-300">

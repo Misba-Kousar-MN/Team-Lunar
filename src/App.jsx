@@ -57,7 +57,7 @@ export default function App() {
       }
     } catch (err) {
       console.error(err);
-      setError("An unexpected error occurred during review analysis. Please check your network and try again.");
+      setError(err.response?.data?.message || "Server error");
       showToast("Analysis failed.", "error");
     } finally {
       setIsLoading(false);

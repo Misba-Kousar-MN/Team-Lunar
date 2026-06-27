@@ -2,8 +2,10 @@ import React from 'react';
 import { ShieldCheck, ShieldAlert, Brain, Percent } from 'lucide-react';
 
 export default function ReviewCard({ review }) {
-  const isFake = review.label === 'Fake';
-  const confidencePercent = Math.round(review.confidence * 100);
+  const isFake = review.prediction === 'Fake';
+  const confidencePercent = review.confidence > 1 
+    ? Math.round(review.confidence) 
+    : Math.round(review.confidence * 100);
 
   // Helper function to highlight keywords dynamically
   const getHighlightedText = (text, keywords) => {
@@ -52,7 +54,7 @@ export default function ReviewCard({ review }) {
           ) : (
             <ShieldCheck className="h-3.5 w-3.5" />
           )}
-          <span>{review.label}</span>
+          <span>{review.prediction}</span>
         </div>
 
         {/* Confidence score indicator */}
@@ -68,7 +70,7 @@ export default function ReviewCard({ review }) {
 
       {/* Review Text Area */}
       <div className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed mb-4 flex-1">
-        "{getHighlightedText(review.text, review.keywords)}"
+        "{getHighlightedText(review.review, review.keywords)}"
       </div>
 
       {/* Bottom Row: AI Insights Explanation */}
@@ -82,7 +84,7 @@ export default function ReviewCard({ review }) {
           <span className="font-semibold uppercase tracking-wider text-[10px] text-slate-400 block mb-0.5">
             AI Explanation
           </span>
-          {review.reason}
+          {Array.isArray(review.reason) ? review.reason.join(' ') : review.reason}
         </div>
       </div>
 
