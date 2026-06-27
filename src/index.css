@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #f5f7ff;
+  --color-brand-100: #ebf0ff;
+  --color-brand-200: #d6e0ff;
+  --color-brand-300: #b3c7ff;
+  --color-brand-400: #85a3ff;
+  --color-brand-500: #5275ff;
+  --color-brand-600: #334eff;
+  --color-brand-700: #2437e0;
+  --color-brand-800: #1d2bb8;
+  --color-brand-900: #1c2691;
+  --color-brand-950: #111757;
+  
+  --color-slate-950: #020617;
+  
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-spin-slow: spin 8s linear infinite;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@utility glass-effect {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-width: 1px;
+  border-color: rgba(226, 232, 240, 0.5);
+}
+
+.dark .glass-effect {
+  background-color: rgba(15, 23, 42, 0.7);
+  border-color: rgba(30, 41, 59, 0.5);
+}
+
+@utility glow-green {
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+}
+@utility glow-yellow {
+  box-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
+}
+@utility glow-red {
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+}
+
+@utility animate-slide-in {
+  animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #475569;
+}
+
+/* Custom scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+}
+
+.dark body {
+  background-color: #020617;
+  color: #f8fafc;
+}

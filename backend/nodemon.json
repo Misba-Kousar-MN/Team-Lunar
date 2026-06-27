@@ -1,0 +1,7 @@
+{
+  "watch": ["*.js", "config/", "controllers/", "middlewares/", "models/", "routes/", "services/", "validators/", "reviewProviders/", "utils/"],
+  "ext": "js,json",
+  "ignore": ["node_modules/", "logs/", "*.log", "test_integration.js"],
+  "delay": 500,
+  "signal": "SIGTERM"
+}
