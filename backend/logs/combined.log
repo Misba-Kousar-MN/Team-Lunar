@@ -577,3 +577,185 @@
 2026-06-27 15:17:07 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
 2026-06-27 15:17:34 [INFO]: Successfully processed and saved analysis history. ID: 6a3f9c361b6dae17de088a07
 2026-06-27 15:17:34 [INFO]: [0mPOST /analyze [32m200[0m 27056.744 ms - 2807[0m
+2026-06-27 16:04:55 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 16:04:55 [INFO]: Server is running in development mode on port 5000
+2026-06-27 16:04:55 [INFO]: MongoDB Connected: localhost
+2026-06-27 16:05:33 [INFO]: Starting analysis for 10 reviews
+2026-06-27 16:05:33 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 16:06:01 [INFO]: Successfully processed and saved analysis history. ID: 6a3fa791be03b5fe07417fd4
+2026-06-27 16:06:01 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 16:06:03 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 16:06:03 [INFO]: [0mPOST /analyze [32m200[0m 29355.583 ms - 3476[0m
+2026-06-27 16:29:04 [INFO]: Starting analysis for 10 reviews
+2026-06-27 16:29:04 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 16:29:35 [INFO]: Successfully processed and saved analysis history. ID: 6a3fad16be03b5fe07417fe0
+2026-06-27 16:29:35 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 16:29:37 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 16:29:37 [INFO]: [0mPOST /analyze [32m200[0m 32659.908 ms - 3476[0m
+2026-06-27 16:56:58 [INFO]: Starting analysis for 10 reviews
+2026-06-27 16:56:58 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 16:57:21 [INFO]: Successfully processed and saved analysis history. ID: 6a3fb399be03b5fe07417fec
+2026-06-27 16:57:21 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 16:57:23 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 16:57:23 [INFO]: [0mPOST /analyze [32m200[0m 25193.341 ms - 3476[0m
+2026-06-27 16:58:53 [INFO]: Starting analysis for 10 reviews
+2026-06-27 16:58:53 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 16:59:28 [INFO]: Successfully processed and saved analysis history. ID: 6a3fb418be03b5fe07417ff8
+2026-06-27 16:59:28 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 16:59:31 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 16:59:31 [INFO]: [0mPOST /analyze [32m200[0m 37594.367 ms - 3407[0m
+2026-06-27 17:05:09 [INFO]: Starting analysis for 10 reviews
+2026-06-27 17:05:09 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 17:05:41 [INFO]: Successfully processed and saved analysis history. ID: 6a3fb58dbe03b5fe07418004
+2026-06-27 17:05:41 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 17:05:44 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 17:05:44 [INFO]: [0mPOST /analyze [32m200[0m 35246.327 ms - 3298[0m
+2026-06-27 17:24:02 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 17:24:02 [INFO]: Server is running in development mode on port 5000
+2026-06-27 17:24:02 [INFO]: MongoDB Connected: localhost
+2026-06-27 17:24:21 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 17:24:21 [INFO]: Server is running in development mode on port 5000
+2026-06-27 17:24:21 [INFO]: MongoDB Connected: localhost
+2026-06-27 17:30:07 [INFO]: Starting analysis for 10 reviews
+2026-06-27 17:30:07 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 17:30:39 [INFO]: Successfully processed and saved analysis history. ID: 6a3fbb671092c287ab104499
+2026-06-27 17:30:39 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 17:30:42 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 17:30:42 [DEBUG]: [TrustService] Spawning trust engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\trust_engine.py
+2026-06-27 17:30:44 [INFO]: [0mPOST /analyze [32m200[0m 37647.436 ms - 4265[0m
+2026-06-27 17:36:22 [INFO]: [0mGET /health [32m200[0m 0.679 ms - 89[0m
+2026-06-27 17:39:14 [WARN]: MongoDB disconnected! Attempting to reconnect...
+2026-06-27 17:39:24 [INFO]: MongoDB reconnected!
+2026-06-27 17:42:52 [INFO]: --- Starting Integration Test ---
+2026-06-27 17:42:52 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 17:42:52 [INFO]: MongoDB Connected: localhost
+2026-06-27 17:42:52 [INFO]: Cleaned up previous test records.
+2026-06-27 17:42:52 [INFO]: Running AI review analysis pipeline...
+2026-06-27 17:42:52 [INFO]: Starting analysis for 6 reviews
+2026-06-27 17:42:52 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 17:43:20 [INFO]: Successfully processed and saved analysis history. ID: 6a3fbe606f52bb7c941fda6d
+2026-06-27 17:43:20 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 17:43:22 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=61, AuthScore=81
+2026-06-27 17:43:22 [DEBUG]: [TrustService] Spawning trust engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\trust_engine.py
+2026-06-27 17:43:25 [INFO]: Integration Test Result Output:
+2026-06-27 17:43:25 [INFO]: Checking individual reviews:
+2026-06-27 17:43:25 [INFO]: Review #1 prediction: [Fake] (Confidence: 92%)
+2026-06-27 17:43:25 [INFO]: Reasons: Semantic near-duplicate of another review in this batch
+2026-06-27 17:43:25 [INFO]: Review #2 prediction: [Fake] (Confidence: 92%)
+2026-06-27 17:43:25 [INFO]: Reasons: Semantic near-duplicate of another review in this batch
+2026-06-27 17:43:25 [INFO]: Review #3 prediction: [Real] (Confidence: 75%)
+2026-06-27 17:43:25 [INFO]: Reasons: Review is excessively brief, containing too little details, Highly polarized positive sentiment combined with thin generic text
+2026-06-27 17:43:25 [INFO]: Review #4 prediction: [Fake] (Confidence: 84%)
+2026-06-27 17:43:25 [INFO]: Reasons: Spammy keyword repetition detected for word 'buy'
+2026-06-27 17:43:25 [INFO]: Review #5 prediction: [Real] (Confidence: 98%)
+2026-06-27 17:43:25 [INFO]: Reasons: Natural text pattern and unique review structure
+2026-06-27 17:43:25 [INFO]: Review #6 prediction: [Real] (Confidence: 75%)
+2026-06-27 17:43:25 [INFO]: Reasons: Review is excessively brief, containing too little details, Highly polarized negative sentiment combined with thin generic text
+2026-06-27 17:43:25 [INFO]: Verified database record storage. Record ID: 6a3fbe606f52bb7c941fda6d
+2026-06-27 17:43:25 [INFO]: Testing GET /api/history...
+2026-06-27 17:43:25 [INFO]: GET /api/history returned 72 records.
+2026-06-27 17:43:25 [INFO]: Testing GET /api/history/6a3fbe606f52bb7c941fda6d...
+2026-06-27 17:43:25 [INFO]: GET /api/history/6a3fbe606f52bb7c941fda6d retrieved successfully.
+2026-06-27 17:43:25 [INFO]: Testing DELETE /api/history/6a3fbe606f52bb7c941fda6d...
+2026-06-27 17:43:25 [INFO]: DELETE /api/history/6a3fbe606f52bb7c941fda6d passed (Status 204).
+2026-06-27 17:43:25 [INFO]: --- Integration Test PASSED successfully! ---
+2026-06-27 17:43:25 [WARN]: MongoDB disconnected! Attempting to reconnect...
+2026-06-27 17:43:25 [INFO]: Database disconnected. Exiting test.
+2026-06-27 17:49:42 [INFO]: Starting analysis for 10 reviews
+2026-06-27 17:49:42 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 17:50:03 [INFO]: Successfully processed and saved analysis history. ID: 6a3fbff31092c287ab1044a5
+2026-06-27 17:50:03 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 17:50:05 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 17:50:05 [DEBUG]: [TrustService] Spawning trust engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\trust_engine.py
+2026-06-27 17:50:06 [INFO]: [0mPOST /analyze [32m200[0m 24280.602 ms - 4265[0m
+2026-06-27 17:50:54 [INFO]: Starting analysis for 10 reviews
+2026-06-27 17:50:54 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 17:51:15 [INFO]: Successfully processed and saved analysis history. ID: 6a3fc03b1092c287ab1044b1
+2026-06-27 17:51:15 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 17:51:16 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 17:51:16 [DEBUG]: [TrustService] Spawning trust engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\trust_engine.py
+2026-06-27 17:51:18 [INFO]: [0mPOST /analyze [32m200[0m 23618.451 ms - 4196[0m
+2026-06-27 17:56:27 [INFO]: Starting analysis for 10 reviews
+2026-06-27 17:56:27 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 17:56:47 [INFO]: Successfully processed and saved analysis history. ID: 6a3fc1871092c287ab1044bd
+2026-06-27 17:56:47 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 17:56:48 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 17:56:48 [DEBUG]: [TrustService] Spawning trust engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\trust_engine.py
+2026-06-27 17:56:50 [INFO]: [0mPOST /analyze [32m200[0m 22259.337 ms - 4265[0m
+2026-06-27 18:01:40 [INFO]: Starting analysis for 10 reviews
+2026-06-27 18:01:40 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 18:02:01 [INFO]: Successfully processed and saved analysis history. ID: 6a3fc2c01092c287ab1044c9
+2026-06-27 18:02:01 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 18:02:02 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 18:02:02 [DEBUG]: [TrustService] Spawning trust engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\trust_engine.py
+2026-06-27 18:02:03 [INFO]: [0mPOST /analyze [32m200[0m 23285.115 ms - 4265[0m
+2026-06-27 18:10:37 [INFO]: Starting analysis for 10 reviews
+2026-06-27 18:10:37 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 18:10:52 [INFO]: Successfully processed and saved analysis history. ID: 6a3fc4d41092c287ab1044d5
+2026-06-27 18:10:52 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 18:10:54 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 18:10:54 [DEBUG]: [TrustService] Spawning trust engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\trust_engine.py
+2026-06-27 18:10:55 [INFO]: [0mPOST /analyze [32m200[0m 17865.905 ms - 4265[0m
+2026-06-27 18:12:06 [INFO]: Starting analysis for 10 reviews
+2026-06-27 18:12:06 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 18:12:26 [INFO]: Successfully processed and saved analysis history. ID: 6a3fc5321092c287ab1044e1
+2026-06-27 18:12:26 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 18:12:27 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 18:12:27 [DEBUG]: [TrustService] Spawning trust engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\trust_engine.py
+2026-06-27 18:12:29 [INFO]: [0mPOST /analyze [32m200[0m 22794.745 ms - 4265[0m
+2026-06-27 18:17:57 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 18:17:57 [INFO]: Server is running in development mode on port 5000
+2026-06-27 18:17:57 [INFO]: MongoDB Connected: localhost
+2026-06-27 18:18:09 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 18:18:09 [INFO]: Server is running in development mode on port 5000
+2026-06-27 18:18:09 [INFO]: MongoDB Connected: localhost
+2026-06-27 18:18:19 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 18:18:19 [INFO]: Server is running in development mode on port 5000
+2026-06-27 18:18:19 [INFO]: MongoDB Connected: localhost
+2026-06-27 18:21:17 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 18:21:17 [INFO]: Server is running in development mode on port 5000
+2026-06-27 18:21:17 [INFO]: MongoDB Connected: localhost
+2026-06-27 18:22:03 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 18:22:03 [INFO]: Server is running in development mode on port 5000
+2026-06-27 18:22:03 [INFO]: MongoDB Connected: localhost
+2026-06-27 18:23:26 [INFO]: Starting analysis for 10 reviews
+2026-06-27 18:23:26 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 18:23:43 [INFO]: Successfully processed and saved analysis history. ID: 6a3fc7d74dfbdddbeaef9188
+2026-06-27 18:23:43 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 18:23:44 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 18:23:44 [DEBUG]: [TrustService] Spawning trust engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\trust_engine.py
+2026-06-27 18:23:46 [INFO]: [0mPOST /analyze [32m200[0m 19494.999 ms - 4280[0m
+2026-06-27 18:24:49 [INFO]: Starting analysis for 10 reviews
+2026-06-27 18:24:49 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 18:25:10 [INFO]: Successfully processed and saved analysis history. ID: 6a3fc82e4dfbdddbeaef9194
+2026-06-27 18:25:10 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 18:25:11 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=82, AuthScore=96
+2026-06-27 18:25:11 [DEBUG]: [TrustService] Spawning trust engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\trust_engine.py
+2026-06-27 18:25:12 [INFO]: [0mPOST /analyze [32m200[0m 23109.049 ms - 4280[0m
+2026-06-27 18:53:28 [INFO]: Product URL mode: attempting live Apify pull for https://amzn.in/d/0h0necNh
+2026-06-27 18:53:28 [INFO]: [ApifyService] Spawning apify scraper: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\apify_service.py for URL: https://amzn.in/d/0h0necNh
+2026-06-27 18:53:29 [WARN]: [ApifyService] Scrape failed. Reason: APIFY_TOKEN not configured
+2026-06-27 18:53:29 [INFO]: [AnalysisController] Apify failed/unavailable. Falling back to DB/mock provider.
+2026-06-27 18:53:29 [INFO]: Provider returned 12 reviews for fallback.
+2026-06-27 18:53:29 [INFO]: Starting analysis for 12 reviews
+2026-06-27 18:53:29 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 18:54:18 [INFO]: Successfully processed and saved analysis history. ID: 6a3fcf024dfbdddbeaef91a0
+2026-06-27 18:54:18 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 18:54:20 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=74, AuthScore=92
+2026-06-27 18:54:20 [DEBUG]: [TrustService] Spawning trust engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\trust_engine.py
+2026-06-27 18:54:22 [INFO]: [0mPOST /analyze [32m200[0m 54557.177 ms - 4562[0m
+2026-06-27 18:59:13 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 18:59:13 [INFO]: Server is running in development mode on port 5000
+2026-06-27 18:59:13 [INFO]: MongoDB Connected: localhost
+2026-06-27 19:01:59 [INFO]: Product URL mode: attempting live Apify pull for https://amzn.in/d/02h7nez0
+2026-06-27 19:01:59 [INFO]: [ApifyService] Spawning apify scraper: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\apify_service.py for URL: https://amzn.in/d/02h7nez0
+2026-06-27 19:02:00 [WARN]: [ApifyService] Scrape failed. Reason: APIFY_TOKEN not configured
+2026-06-27 19:02:00 [INFO]: [AnalysisController] Apify failed/unavailable. Falling back to DB/mock provider.
+2026-06-27 19:02:00 [INFO]: Provider returned 12 reviews for fallback.
+2026-06-27 19:02:00 [INFO]: Starting analysis for 12 reviews
+2026-06-27 19:02:00 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 19:02:56 [INFO]: Successfully processed and saved analysis history. ID: 6a3fd108f1628703f8194068
+2026-06-27 19:02:56 [DEBUG]: [AuthenticityService] Spawning engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\authenticity_engine.py
+2026-06-27 19:02:58 [DEBUG]: [AuthenticityService] Engine completed. SellerScore=74, AuthScore=92
+2026-06-27 19:02:58 [DEBUG]: [TrustService] Spawning trust engine: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\trust_engine.py
+2026-06-27 19:03:01 [INFO]: [0mPOST /analyze [32m200[0m 62221.128 ms - 4562[0m

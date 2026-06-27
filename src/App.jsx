@@ -72,13 +72,15 @@ export default function App() {
     <div className="min-h-screen flex flex-col bg-[#F6F8FC] text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
       
       {/* Navigation header bar */}
-      <Navbar 
-        page={page} 
-        setPage={setPage} 
-        isDark={isDark} 
-        toggleTheme={toggleTheme} 
-        isMockMode={analysisData ? analysisData.isMock : true} 
-      />
+      {page !== 'dashboard' && (
+        <Navbar 
+          page={page} 
+          setPage={setPage} 
+          isDark={isDark} 
+          toggleTheme={toggleTheme} 
+          isMockMode={analysisData ? analysisData.isMock : true} 
+        />
+      )}
 
       {/* Main Container */}
       <main className="flex-1 flex flex-col">

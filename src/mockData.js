@@ -88,7 +88,47 @@ export const sampleProducts = [
         reason: "Spam keyword tag optimization line instead of human sentence structure.",
         keywords: ["apple iphone air 256gb", "a19 pro chip"]
       }
-    ]
+    ],
+    authenticityEngine: {
+      seller_credibility_score: 81,
+      product_authenticity_score: 78,
+      risk_category: "Low Risk",
+      risk_level: "Low Risk",
+      triggered_flags: ["GENERIC_TEMPLATE_REVIEWS", "SPAM_KEYWORD_STUFFING", "VERIFIED_CONTENT_SIGNALS"],
+      recommendations: [
+        "A significant portion of reviews use boilerplate promotional language. Look for reviews that mention specific product features or usage scenarios.",
+        "Spam-grade keyword stuffing patterns identified in some reviews. These may be computer-generated.",
+        "Strong genuine content signals detected. Authentic reviews with diverse vocabulary suggest a trustworthy seller profile."
+      ],
+      signal_breakdown: {
+        fake_ratio_contribution: 28.0,
+        duplicate_penalty: 4.0,
+        generic_penalty: 3.0,
+        vocabulary_diversity: 8.2,
+        sentiment_balance: 8.5,
+        ai_confidence_weight: 9.1,
+        keyword_stuffing_penalty: 8.5,
+        semantic_cluster_penalty: 5.5,
+        spam_pattern_penalty: 6.0,
+        text_uniqueness: 11.2
+      }
+    },
+    trustEngine: {
+      product_trust_score: 91,
+      overall_shopping_confidence: 89,
+      risk_level: "Highly Trustworthy",
+      marketplace_status: "Amazon Fulfilled",
+      triggered_flags: [],
+      ai_reasoning: [
+        "High review credibility matching natural customer behavior.",
+        "Low content duplication across reviews suggests independent buyers.",
+        "Marketplace verified listing logistics (Amazon Fulfilled).",
+        "High review diversity with descriptive feedback patterns."
+      ],
+      recommendations: [
+        "Confidence profile is healthy. Authentic purchase indicators are strong."
+      ]
+    }
   },
   {
     id: "macbook-air",
@@ -179,7 +219,47 @@ export const sampleProducts = [
         reason: "SEO keyword string mapping catalog names instead of typing actual review sentences.",
         keywords: ["macbook air 15", "m3 laptop"]
       }
-    ]
+    ],
+    authenticityEngine: {
+      seller_credibility_score: 77,
+      product_authenticity_score: 75,
+      risk_category: "Low Risk",
+      risk_level: "Low Risk",
+      triggered_flags: ["GENERIC_TEMPLATE_REVIEWS", "DUPLICATE_CLUSTER", "VERIFIED_CONTENT_SIGNALS"],
+      recommendations: [
+        "A portion of reviews use boilerplate promotional language without specific technical details. Prioritize Verified Purchase reviews.",
+        "Semantically identical duplicate reviews were detected, suggesting possible coordinated review activity.",
+        "Overall genuine review signals are strong. High-quality descriptive reviews from developers and professionals add credibility."
+      ],
+      signal_breakdown: {
+        fake_ratio_contribution: 28.0,
+        duplicate_penalty: 6.0,
+        generic_penalty: 4.5,
+        vocabulary_diversity: 8.8,
+        sentiment_balance: 7.5,
+        ai_confidence_weight: 9.3,
+        keyword_stuffing_penalty: 7.0,
+        semantic_cluster_penalty: 7.0,
+        spam_pattern_penalty: 5.5,
+        text_uniqueness: 11.8
+      }
+    },
+    trustEngine: {
+      product_trust_score: 94,
+      overall_shopping_confidence: 92,
+      risk_level: "Excellent",
+      marketplace_status: "Amazon Fulfilled",
+      triggered_flags: [],
+      ai_reasoning: [
+        "Excellent vocabulary diversity with detailed photo/dev feedback.",
+        "Zero duplicate review clusters detected.",
+        "Price is 100% consistent with reference market price.",
+        "Marketplace verified listing logistics (Amazon Fulfilled)."
+      ],
+      recommendations: [
+        "Confidence profile is healthy. Authentic purchase indicators are strong."
+      ]
+    }
   },
   {
     id: "samsung-refrigerator",
@@ -270,7 +350,49 @@ export const sampleProducts = [
         reason: "Tag list optimization string common to automated marketing botnets.",
         keywords: ["side by side refrigerator", "water dispenser"]
       }
-    ]
+    ],
+    authenticityEngine: {
+      seller_credibility_score: 68,
+      product_authenticity_score: 64,
+      risk_category: "Medium Risk",
+      risk_level: "Medium Risk",
+      triggered_flags: ["HIGH_FAKE_RATIO", "DUPLICATE_CLUSTER", "GENERIC_TEMPLATE_REVIEWS", "SPAM_KEYWORD_STUFFING"],
+      recommendations: [
+        "Over 30% of reviews show suspicious patterns. Cross-verify on independent review platforms before purchasing.",
+        "Multiple semantically identical reviews detected, indicating coordinated review activity.",
+        "Spam-grade keyword stuffing patterns identified. Some reviews may be computer-generated.",
+        "Consider cross-checking product ratings on Flipkart or retailer websites for independent verification."
+      ],
+      signal_breakdown: {
+        fake_ratio_contribution: 21.0,
+        duplicate_penalty: 8.0,
+        generic_penalty: 6.5,
+        vocabulary_diversity: 7.1,
+        sentiment_balance: 6.0,
+        ai_confidence_weight: 8.8,
+        keyword_stuffing_penalty: 12.5,
+        semantic_cluster_penalty: 9.5,
+        spam_pattern_penalty: 10.5,
+        text_uniqueness: 9.2
+      }
+    },
+    trustEngine: {
+      product_trust_score: 61,
+      overall_shopping_confidence: 58,
+      risk_level: "Exercise Caution",
+      marketplace_status: "Amazon Fulfilled",
+      triggered_flags: ["HIGH_SUSPICIOUS_REVIEW_RATIO", "COORDINATED_REVIEWS"],
+      ai_reasoning: [
+        "Elevated suspicious review patterns detected by linguistic classifier.",
+        "Coordinated review duplicates detected indicating template posting.",
+        "Reviews feature high generic praise keywords with low specificity.",
+        "Marketplace verified listing logistics (Amazon Fulfilled)."
+      ],
+      recommendations: [
+        "Filter reviews to 'Verified Purchase' only to bypass copy-pasted review clusters.",
+        "Review patterns indicate likelihood of rating inflation. Exercise caution."
+      ]
+    }
   },
   {
     id: "samsung-washer",
@@ -361,7 +483,47 @@ export const sampleProducts = [
         reason: "Tag list optimization string common to automated marketing botnets.",
         keywords: ["front load washing", "ai ecobubble"]
       }
-    ]
+    ],
+    authenticityEngine: {
+      seller_credibility_score: 80,
+      product_authenticity_score: 77,
+      risk_category: "Low Risk",
+      risk_level: "Low Risk",
+      triggered_flags: ["GENERIC_TEMPLATE_REVIEWS", "DUPLICATE_CLUSTER", "VERIFIED_CONTENT_SIGNALS"],
+      recommendations: [
+        "A subset of reviews use boilerplate language. Prioritize reviews that describe specific wash cycle experiences.",
+        "Semantically identical duplicate reviews detected — may indicate coordinated activity from a limited source.",
+        "Strong genuine content signals: technical references to AI control, Ecobubble, and SmartThings app add significant credibility."
+      ],
+      signal_breakdown: {
+        fake_ratio_contribution: 28.0,
+        duplicate_penalty: 5.0,
+        generic_penalty: 4.5,
+        vocabulary_diversity: 8.5,
+        sentiment_balance: 8.0,
+        ai_confidence_weight: 9.2,
+        keyword_stuffing_penalty: 6.0,
+        semantic_cluster_penalty: 6.5,
+        spam_pattern_penalty: 6.8,
+        text_uniqueness: 12.0
+      }
+    },
+    trustEngine: {
+      product_trust_score: 87,
+      overall_shopping_confidence: 85,
+      risk_level: "Highly Trustworthy",
+      marketplace_status: "Amazon Fulfilled",
+      triggered_flags: [],
+      ai_reasoning: [
+        "High review credibility matching natural customer behavior.",
+        "Reviews mention specific features (Ecobubble, AI control, smartthings).",
+        "Marketplace verified listing logistics (Amazon Fulfilled).",
+        "Low duplicate review clusters detected."
+      ],
+      recommendations: [
+        "Confidence profile is healthy. Authentic purchase indicators are strong."
+      ]
+    }
   },
   {
     id: "canon-camera",
@@ -452,7 +614,47 @@ export const sampleProducts = [
         reason: "Tag list optimization string common to automated marketing botnets.",
         keywords: ["eos r50 v", "mirrorless camera kit"]
       }
-    ]
+    ],
+    authenticityEngine: {
+      seller_credibility_score: 74,
+      product_authenticity_score: 73,
+      risk_category: "Low Risk",
+      risk_level: "Low Risk",
+      triggered_flags: ["GENERIC_TEMPLATE_REVIEWS", "DUPLICATE_CLUSTER", "SPAM_KEYWORD_STUFFING"],
+      recommendations: [
+        "Some reviews use promotional template language. Look for reviews that mention specific photographic scenarios or lens performance.",
+        "Duplicate review patterns detected. Seek reviews from different purchase dates and buyer profiles.",
+        "Spam keyword patterns found in some reviews. Cross-verify on dedicated photography community reviews for objective insight."
+      ],
+      signal_breakdown: {
+        fake_ratio_contribution: 28.0,
+        duplicate_penalty: 6.0,
+        generic_penalty: 4.5,
+        vocabulary_diversity: 7.8,
+        sentiment_balance: 7.2,
+        ai_confidence_weight: 8.9,
+        keyword_stuffing_penalty: 8.0,
+        semantic_cluster_penalty: 8.0,
+        spam_pattern_penalty: 8.5,
+        text_uniqueness: 10.5
+      }
+    },
+    trustEngine: {
+      product_trust_score: 82,
+      overall_shopping_confidence: 80,
+      risk_level: "Highly Trustworthy",
+      marketplace_status: "Amazon Fulfilled",
+      triggered_flags: [],
+      ai_reasoning: [
+        "Review vocabulary diversity is healthy.",
+        "Marketplace verified listing logistics (Amazon Fulfilled).",
+        "Price matches baseline reference index.",
+        "Linguistic review flow matches normal consumer patterns."
+      ],
+      recommendations: [
+        "Confidence profile is healthy. Authentic purchase indicators are strong."
+      ]
+    }
   },
   {
     id: "lg-oled-tv",
@@ -543,7 +745,47 @@ export const sampleProducts = [
         reason: "Tag list optimization string common to automated marketing botnets.",
         keywords: ["oled b4 series", "oled55b46la"]
       }
-    ]
+    ],
+    authenticityEngine: {
+      seller_credibility_score: 82,
+      product_authenticity_score: 80,
+      risk_category: "Low Risk",
+      risk_level: "Low Risk",
+      triggered_flags: ["GENERIC_TEMPLATE_REVIEWS", "DUPLICATE_CLUSTER", "VERIFIED_CONTENT_SIGNALS"],
+      recommendations: [
+        "A subset of reviews is generic. Prioritize reviews that reference specific OLED panel characteristics or gaming performance details.",
+        "Some duplicate reviews detected — may indicate a small coordinated group.",
+        "Genuine content signals are strong: gaming-specific HDMI 2.1 and G-Sync references validate authentic buyer experience."
+      ],
+      signal_breakdown: {
+        fake_ratio_contribution: 28.0,
+        duplicate_penalty: 5.0,
+        generic_penalty: 3.5,
+        vocabulary_diversity: 9.0,
+        sentiment_balance: 8.8,
+        ai_confidence_weight: 9.4,
+        keyword_stuffing_penalty: 5.0,
+        semantic_cluster_penalty: 5.5,
+        spam_pattern_penalty: 5.0,
+        text_uniqueness: 12.5
+      }
+    },
+    trustEngine: {
+      product_trust_score: 92,
+      overall_shopping_confidence: 90,
+      risk_level: "Excellent",
+      marketplace_status: "Amazon Fulfilled",
+      triggered_flags: [],
+      ai_reasoning: [
+        "Highly specific review mentions (HDMI 2.1, OLED panel, Dolby Vision).",
+        "Low duplicate review patterns detected.",
+        "Marketplace verified listing logistics (Amazon Fulfilled).",
+        "Price matches baseline reference index."
+      ],
+      recommendations: [
+        "Confidence profile is healthy. Authentic purchase indicators are strong."
+      ]
+    }
   },
   {
     id: "lg-dishwasher",
@@ -634,7 +876,45 @@ export const sampleProducts = [
         reason: "Tag keyword list stuffing instead of natural review sentences.",
         keywords: ["lg 14 place settings", "kadhai cleaning"]
       }
-    ]
+    ],
+    authenticityEngine: {
+      seller_credibility_score: 87,
+      product_authenticity_score: 86,
+      risk_category: "Low Risk",
+      risk_level: "Low Risk",
+      triggered_flags: ["VERIFIED_CONTENT_SIGNALS"],
+      recommendations: [
+        "Product authenticity signals are strong. Reviews reference specific Indian cooking use-cases (kadhai, masala), steam sanitization, and inverter motor performance — highly credible buyer experiences."
+      ],
+      signal_breakdown: {
+        fake_ratio_contribution: 31.5,
+        duplicate_penalty: 3.0,
+        generic_penalty: 2.0,
+        vocabulary_diversity: 9.5,
+        sentiment_balance: 9.0,
+        ai_confidence_weight: 9.6,
+        keyword_stuffing_penalty: 4.0,
+        semantic_cluster_penalty: 4.5,
+        spam_pattern_penalty: 3.5,
+        text_uniqueness: 13.0
+      }
+    },
+    trustEngine: {
+      product_trust_score: 95,
+      overall_shopping_confidence: 93,
+      risk_level: "Excellent",
+      marketplace_status: "Flipkart Assured",
+      triggered_flags: [],
+      ai_reasoning: [
+        "Highly trustworthy review patterns matched.",
+        "Reviews mention specific usage (Inverter motor, kadhai, masala stains).",
+        "Marketplace verified listing logistics (Flipkart Assured).",
+        "Vocabulary diversity score is high."
+      ],
+      recommendations: [
+        "Confidence profile is healthy. Authentic purchase indicators are strong."
+      ]
+    }
   },
   {
     id: "apple-ipad-9th",
@@ -725,7 +1005,47 @@ export const sampleProducts = [
         reason: "Tag indexing metadata pattern typical of marketing botnets.",
         keywords: ["apple ipad 9th gen", "student ipad"]
       }
-    ]
+    ],
+    authenticityEngine: {
+      seller_credibility_score: 84,
+      product_authenticity_score: 83,
+      risk_category: "Low Risk",
+      risk_level: "Low Risk",
+      triggered_flags: ["GENERIC_TEMPLATE_REVIEWS", "DUPLICATE_CLUSTER", "VERIFIED_CONTENT_SIGNALS"],
+      recommendations: [
+        "A small subset of reviews are boilerplate — look for reviews that discuss Pencil charging limitations or LTE carrier compatibility.",
+        "Duplicate review pairs detected — minor coordinated activity present.",
+        "Genuine signal strength is high: Center Stage tracking, LTE carrier names, and gaming title references confirm authentic buyers."
+      ],
+      signal_breakdown: {
+        fake_ratio_contribution: 31.5,
+        duplicate_penalty: 4.0,
+        generic_penalty: 3.0,
+        vocabulary_diversity: 9.2,
+        sentiment_balance: 8.8,
+        ai_confidence_weight: 9.5,
+        keyword_stuffing_penalty: 4.5,
+        semantic_cluster_penalty: 5.0,
+        spam_pattern_penalty: 4.0,
+        text_uniqueness: 12.8
+      }
+    },
+    trustEngine: {
+      product_trust_score: 91,
+      overall_shopping_confidence: 89,
+      risk_level: "Highly Trustworthy",
+      marketplace_status: "Flipkart Assured",
+      triggered_flags: [],
+      ai_reasoning: [
+        "Low duplicate review clustering detected.",
+        "Marketplace verified listing logistics (Flipkart Assured).",
+        "Linguistic review flow matches normal consumer patterns.",
+        "Reviews mention specific traits (Student use, Apple pencil, a13 chip)."
+      ],
+      recommendations: [
+        "Confidence profile is healthy. Authentic purchase indicators are strong."
+      ]
+    }
   },
   {
     id: "sleepyhead-kiki-sofa",
@@ -816,7 +1136,49 @@ export const sampleProducts = [
         reason: "Tag list optimization string common to seller automated marketing botnets.",
         keywords: ["duroflex foam", "living room furniture"]
       }
-    ]
+    ],
+    authenticityEngine: {
+      seller_credibility_score: 66,
+      product_authenticity_score: 62,
+      risk_category: "Medium Risk",
+      risk_level: "Medium Risk",
+      triggered_flags: ["HIGH_FAKE_RATIO", "DUPLICATE_CLUSTER", "GENERIC_TEMPLATE_REVIEWS", "SPAM_KEYWORD_STUFFING"],
+      recommendations: [
+        "Over 30% of reviews show suspicious patterns. Verify on independent furniture review platforms.",
+        "Multiple semantically identical reviews detected — possible coordinated review activity.",
+        "Generic promotional template phrases dominate a large portion. Look for reviews that discuss foam durability or stitching quality after 6+ months of use.",
+        "Check for reviews mentioning specific color accuracy and fabric maintenance for a more balanced product picture."
+      ],
+      signal_breakdown: {
+        fake_ratio_contribution: 21.0,
+        duplicate_penalty: 8.0,
+        generic_penalty: 7.0,
+        vocabulary_diversity: 6.5,
+        sentiment_balance: 5.8,
+        ai_confidence_weight: 8.5,
+        keyword_stuffing_penalty: 12.0,
+        semantic_cluster_penalty: 11.0,
+        spam_pattern_penalty: 11.5,
+        text_uniqueness: 8.5
+      }
+    },
+    trustEngine: {
+      product_trust_score: 60,
+      overall_shopping_confidence: 56,
+      risk_level: "Exercise Caution",
+      marketplace_status: "Flipkart Assured",
+      triggered_flags: ["HIGH_SUSPICIOUS_REVIEW_RATIO", "COORDINATED_REVIEWS"],
+      ai_reasoning: [
+        "Linguistic classifier flagged 30% of reviews as suspicious.",
+        "Coordinated review duplicates detected indicating template posting.",
+        "Price consistent with reference market price.",
+        "Marketplace verified listing logistics (Flipkart Assured)."
+      ],
+      recommendations: [
+        "Filter reviews to 'Verified Purchase' only to bypass copy-pasted review clusters.",
+        "Review patterns indicate likelihood of rating inflation. Exercise caution."
+      ]
+    }
   }
 ];
 
@@ -858,5 +1220,47 @@ export const fallbackAnalysis = {
       reason: "Extremely generic feedback with no descriptive nouns or specific features mentioned.",
       keywords: ["Highly recommended!", "Absolutely perfect quality!", "5 stars"]
     }
-  ]
+  ],
+  authenticityEngine: {
+    seller_credibility_score: 55,
+    product_authenticity_score: 52,
+    risk_category: "Medium Risk",
+    risk_level: "Medium Risk",
+    triggered_flags: ["HIGH_FAKE_RATIO", "SPAM_KEYWORD_STUFFING", "GENERIC_TEMPLATE_REVIEWS"],
+    recommendations: [
+      "Over 40% of reviews show suspicious patterns. Cross-verify on independent review platforms before purchasing.",
+      "Spam-grade keyword stuffing and promotional phrases identified in multiple reviews.",
+      "Generic boilerplate reviews detected. Seek reviews that mention specific product features or usage scenarios.",
+      "Consider purchasing from a verified platform store with a clear return policy."
+    ],
+    signal_breakdown: {
+      fake_ratio_contribution: 17.5,
+      duplicate_penalty: 5.0,
+      generic_penalty: 5.0,
+      vocabulary_diversity: 6.5,
+      sentiment_balance: 6.0,
+      ai_confidence_weight: 8.2,
+      keyword_stuffing_penalty: 13.0,
+      semantic_cluster_penalty: 10.0,
+      spam_pattern_penalty: 12.0,
+      text_uniqueness: 8.5
+    }
+  },
+  trustEngine: {
+    product_trust_score: 55,
+    overall_shopping_confidence: 52,
+    risk_level: "Exercise Caution",
+    marketplace_status: "Amazon Fulfilled",
+    triggered_flags: ["HIGH_SUSPICIOUS_REVIEW_RATIO", "COORDINATED_REVIEWS", "LOW_VOCAB_DIVERSITY"],
+    ai_reasoning: [
+      "Linguistic classifier flagged 40% of reviews as suspicious.",
+      "Coordinated review duplicates detected indicating template posting.",
+      "Low vocabulary diversity across reviews.",
+      "Marketplace verified listing logistics (Amazon Fulfilled)."
+    ],
+    recommendations: [
+      "Review patterns indicate high likelihood of rating inflation. Exercise caution.",
+      "Double check pricing with official retail stores to avoid counterfeit listings."
+    ]
+  }
 };
