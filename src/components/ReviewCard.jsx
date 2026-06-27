@@ -32,10 +32,10 @@ export default function ReviewCard({ review }) {
   };
 
   return (
-    <div className={`group relative flex flex-col p-5 bg-white dark:bg-slate-900 rounded-2xl border transition-all duration-300 hover:shadow-md ${
+    <div className={`group relative flex flex-col p-5 bg-white dark:bg-slate-900 rounded-2xl border transition-all duration-300 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] ${
       isFake 
-        ? 'border-rose-100 hover:border-rose-200 dark:border-rose-950/30 dark:hover:border-rose-900/50' 
-        : 'border-emerald-100 hover:border-emerald-200 dark:border-emerald-950/30 dark:hover:border-emerald-900/50'
+        ? 'border-rose-100/70 hover:border-rose-200 dark:border-rose-950/30 dark:hover:border-rose-900/50' 
+        : 'border-emerald-100/70 hover:border-emerald-200 dark:border-emerald-950/30 dark:hover:border-emerald-900/50'
     }`}>
       
       {/* Top row: Badges and Confidence */}
@@ -55,13 +55,14 @@ export default function ReviewCard({ review }) {
           <span>{review.label}</span>
         </div>
 
-        {/* Confidence score indicator */}
-        <div className="flex items-center gap-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">
-          <Percent className="h-3 w-3 text-slate-400" />
-          <span>Confidence:</span>
-          <span className={`font-bold ${isFake ? 'text-rose-500' : 'text-emerald-500'}`}>
-            {confidencePercent}%
-          </span>
+        {/* Confidence score indicator pill */}
+        <div className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold border uppercase tracking-wider select-none ${
+          isFake 
+            ? 'bg-rose-50 text-rose-600 border-rose-100 dark:bg-rose-950/20 dark:text-rose-450 dark:border-rose-900/30' 
+            : 'bg-emerald-50 text-emerald-600 border-emerald-100 dark:bg-emerald-950/20 dark:text-emerald-450 dark:border-emerald-900/30'
+        }`}>
+          <span className="text-[8px]">{isFake ? '🔴' : '🟢'}</span>
+          <span>{confidencePercent}%</span>
         </div>
 
       </div>

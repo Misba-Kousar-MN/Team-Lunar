@@ -335,3 +335,245 @@
 2026-06-27 08:54:01 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
 2026-06-27 08:54:21 [INFO]: Successfully processed and saved analysis history. ID: 6a3f4265b80a59bdc8c2a10b
 2026-06-27 08:54:21 [INFO]: [0mPOST /api/analyze [32m200[0m 19456.036 ms - 3215[0m
+2026-06-27 10:06:26 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 10:06:26 [INFO]: Server is running in development mode on port 5000
+2026-06-27 10:06:26 [INFO]: MongoDB Connected: localhost
+2026-06-27 10:08:17 [ERROR]: Error: Can't find /analyze on this server!
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\app.js:64:8
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+2026-06-27 10:08:17 [INFO]: [0mPOST /analyze [33m404[0m 21.956 ms - 1482[0m
+2026-06-27 10:15:06 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 10:15:06 [INFO]: Server is running in development mode on port 5000
+2026-06-27 10:15:06 [INFO]: MongoDB Connected: localhost
+2026-06-27 10:15:46 [INFO]: Starting analysis for 3 reviews
+2026-06-27 10:15:46 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 10:16:36 [INFO]: Successfully processed and saved analysis history. ID: 6a3f55aced90f084e229be3f
+2026-06-27 10:16:36 [INFO]: [0mPOST /analyze [32m200[0m 50514.881 ms - 869[0m
+2026-06-27 10:16:46 [INFO]: Product URL mode: fetching reviews for https://www.amazon.in/dp/B09XYZ1234
+2026-06-27 10:16:46 [INFO]: Provider returned 12 reviews for https://www.amazon.in/dp/B09XYZ1234
+2026-06-27 10:16:46 [INFO]: Starting analysis for 12 reviews
+2026-06-27 10:16:46 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 10:17:21 [INFO]: Successfully processed and saved analysis history. ID: 6a3f55d9ed90f084e229be44
+2026-06-27 10:17:21 [INFO]: [0mPOST /analyze [32m200[0m 35539.264 ms - 3215[0m
+2026-06-27 10:18:25 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 10:18:25 [INFO]: Server is running in development mode on port 5000
+2026-06-27 10:18:25 [INFO]: MongoDB Connected: localhost
+2026-06-27 10:19:30 [INFO]: Starting analysis for 5 reviews
+2026-06-27 10:19:30 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 10:19:56 [INFO]: Successfully processed and saved analysis history. ID: 6a3f5674beb526cb38062c11
+2026-06-27 10:19:56 [INFO]: [0mPOST /analyze [32m200[0m 26343.814 ms - 1654[0m
+2026-06-27 10:20:29 [INFO]: Starting analysis for 5 reviews
+2026-06-27 10:20:29 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 10:20:34 [INFO]: [0mPOST /analyze [0m-[0m - ms - -[0m
+2026-06-27 10:20:41 [INFO]: Starting analysis for 6 reviews
+2026-06-27 10:20:41 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 10:20:56 [INFO]: Successfully processed and saved analysis history. ID: 6a3f56b0beb526cb38062c18
+2026-06-27 10:21:06 [INFO]: Successfully processed and saved analysis history. ID: 6a3f56babeb526cb38062c1f
+2026-06-27 10:21:06 [INFO]: [0mPOST /analyze [32m200[0m 24903.405 ms - 1817[0m
+2026-06-27 10:23:14 [INFO]: Starting analysis for 5 reviews
+2026-06-27 10:23:14 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 10:23:42 [INFO]: Successfully processed and saved analysis history. ID: 6a3f5756beb526cb38062c27
+2026-06-27 10:23:42 [INFO]: [0mPOST /analyze [32m200[0m 27393.542 ms - 1654[0m
+2026-06-27 10:24:11 [INFO]: Starting analysis for 3 reviews
+2026-06-27 10:24:11 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 10:24:38 [INFO]: Successfully processed and saved analysis history. ID: 6a3f578ebeb526cb38062c2e
+2026-06-27 10:24:38 [INFO]: [0mPOST /analyze [32m200[0m 26298.110 ms - 982[0m
+2026-06-27 10:34:11 [INFO]: Starting analysis for 6 reviews
+2026-06-27 10:34:11 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 10:34:38 [INFO]: Successfully processed and saved analysis history. ID: 6a3f59e6beb526cb38062c33
+2026-06-27 10:34:38 [INFO]: [0mPOST /analyze [32m200[0m 27433.827 ms - 1817[0m
+2026-06-27 10:39:07 [ERROR]: Error: Can't find / on this server!
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\app.js:64:8
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:646:15
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:265:14)
+2026-06-27 10:39:07 [INFO]: [0mGET / [33m404[0m 3.334 ms - 1417[0m
+2026-06-27 10:39:07 [ERROR]: Error: Can't find /favicon.ico on this server!
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\app.js:64:8
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:646:15
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:265:14)
+2026-06-27 10:39:07 [INFO]: [0mGET /favicon.ico [33m404[0m 1.215 ms - 1439[0m
+2026-06-27 10:40:14 [INFO]: Starting analysis for 5 reviews
+2026-06-27 10:40:14 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 10:40:37 [INFO]: Successfully processed and saved analysis history. ID: 6a3f5b4dbeb526cb38062c3b
+2026-06-27 10:40:37 [INFO]: [0mPOST /analyze [32m200[0m 22342.420 ms - 1654[0m
+2026-06-27 10:46:03 [INFO]: Starting analysis for 5 reviews
+2026-06-27 10:46:03 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 10:46:25 [INFO]: Successfully processed and saved analysis history. ID: 6a3f5ca9beb526cb38062c42
+2026-06-27 10:46:25 [INFO]: [0mPOST /analyze [32m200[0m 22133.413 ms - 1654[0m
+2026-06-27 10:52:32 [INFO]: Starting analysis for 5 reviews
+2026-06-27 10:52:32 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 10:52:53 [INFO]: Successfully processed and saved analysis history. ID: 6a3f5e2dbeb526cb38062c49
+2026-06-27 10:52:53 [INFO]: [0mPOST /analyze [32m200[0m 20336.374 ms - 1654[0m
+2026-06-27 10:58:20 [INFO]: Starting analysis for 5 reviews
+2026-06-27 10:58:20 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 10:58:44 [INFO]: Successfully processed and saved analysis history. ID: 6a3f5f8cbeb526cb38062c50
+2026-06-27 10:58:44 [INFO]: [0mPOST /analyze [32m200[0m 24206.289 ms - 1654[0m
+2026-06-27 11:00:53 [INFO]: Starting analysis for 5 reviews
+2026-06-27 11:00:53 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 11:01:25 [INFO]: Successfully processed and saved analysis history. ID: 6a3f602dbeb526cb38062c57
+2026-06-27 11:01:25 [INFO]: [0mPOST /analyze [32m200[0m 32333.590 ms - 1654[0m
+2026-06-27 11:11:53 [INFO]: Starting analysis for 5 reviews
+2026-06-27 11:11:53 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 11:12:20 [INFO]: Successfully processed and saved analysis history. ID: 6a3f62bcbeb526cb38062c5e
+2026-06-27 11:12:20 [INFO]: [0mPOST /analyze [32m200[0m 27142.075 ms - 1654[0m
+2026-06-27 11:16:14 [INFO]: Starting analysis for 6 reviews
+2026-06-27 11:16:14 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 11:16:50 [INFO]: Successfully processed and saved analysis history. ID: 6a3f63cabeb526cb38062c65
+2026-06-27 11:16:50 [INFO]: [0mPOST /analyze [32m200[0m 35745.894 ms - 1817[0m
+2026-06-27 11:26:15 [INFO]: Starting analysis for 6 reviews
+2026-06-27 11:26:15 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 11:26:43 [INFO]: Successfully processed and saved analysis history. ID: 6a3f661bbeb526cb38062c6d
+2026-06-27 11:26:43 [INFO]: [0mPOST /analyze [32m200[0m 28441.906 ms - 1817[0m
+2026-06-27 11:29:15 [INFO]: Starting analysis for 6 reviews
+2026-06-27 11:29:15 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 11:29:44 [INFO]: Successfully processed and saved analysis history. ID: 6a3f66d0beb526cb38062c75
+2026-06-27 11:29:44 [INFO]: [0mPOST /analyze [32m200[0m 29277.082 ms - 1817[0m
+2026-06-27 11:44:37 [INFO]: Starting analysis for 6 reviews
+2026-06-27 11:44:37 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 11:44:55 [INFO]: Successfully processed and saved analysis history. ID: 6a3f6a5fbeb526cb38062c7d
+2026-06-27 11:44:55 [INFO]: [0mPOST /analyze [32m200[0m 18780.902 ms - 1817[0m
+2026-06-27 11:46:17 [INFO]: Starting analysis for 4 reviews
+2026-06-27 11:46:17 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 11:46:37 [INFO]: Successfully processed and saved analysis history. ID: 6a3f6ac5beb526cb38062c85
+2026-06-27 11:46:37 [INFO]: [0mPOST /analyze [32m200[0m 19468.268 ms - 1256[0m
+2026-06-27 11:52:42 [INFO]: Starting analysis for 5 reviews
+2026-06-27 11:52:42 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 11:53:02 [INFO]: Successfully processed and saved analysis history. ID: 6a3f6c46beb526cb38062c8b
+2026-06-27 11:53:02 [INFO]: [0mPOST /analyze [32m200[0m 20233.891 ms - 1654[0m
+2026-06-27 11:54:32 [INFO]: Starting analysis for 5 reviews
+2026-06-27 11:54:32 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 11:55:02 [INFO]: Successfully processed and saved analysis history. ID: 6a3f6cbebeb526cb38062c92
+2026-06-27 11:55:02 [INFO]: [0mPOST /analyze [32m200[0m 29254.552 ms - 1654[0m
+2026-06-27 11:57:45 [INFO]: Starting analysis for 5 reviews
+2026-06-27 11:57:45 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 11:58:03 [INFO]: Successfully processed and saved analysis history. ID: 6a3f6d73beb526cb38062c99
+2026-06-27 11:58:03 [INFO]: [0mPOST /analyze [32m200[0m 18085.551 ms - 1654[0m
+2026-06-27 11:58:40 [INFO]: Starting analysis for 3 reviews
+2026-06-27 11:58:40 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 11:59:00 [INFO]: Successfully processed and saved analysis history. ID: 6a3f6dacbeb526cb38062ca0
+2026-06-27 11:59:00 [INFO]: [0mPOST /analyze [32m200[0m 19762.667 ms - 982[0m
+2026-06-27 11:59:31 [INFO]: Starting analysis for 6 reviews
+2026-06-27 11:59:31 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 11:59:51 [INFO]: Successfully processed and saved analysis history. ID: 6a3f6ddfbeb526cb38062ca5
+2026-06-27 11:59:51 [INFO]: [0mPOST /analyze [32m200[0m 19835.094 ms - 1817[0m
+2026-06-27 12:00:57 [INFO]: Starting analysis for 5 reviews
+2026-06-27 12:00:57 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:01:27 [INFO]: Successfully processed and saved analysis history. ID: 6a3f6e3fbeb526cb38062cad
+2026-06-27 12:01:27 [INFO]: [0mPOST /analyze [32m200[0m 29955.368 ms - 1654[0m
+2026-06-27 12:01:40 [INFO]: Starting analysis for 5 reviews
+2026-06-27 12:01:40 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:02:07 [INFO]: Successfully processed and saved analysis history. ID: 6a3f6e67beb526cb38062cb4
+2026-06-27 12:02:07 [INFO]: [0mPOST /analyze [32m200[0m 27823.691 ms - 1654[0m
+2026-06-27 12:05:29 [INFO]: Starting analysis for 3 reviews
+2026-06-27 12:05:29 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:05:58 [INFO]: Successfully processed and saved analysis history. ID: 6a3f6f4ebeb526cb38062cbb
+2026-06-27 12:05:58 [INFO]: [0mPOST /analyze [32m200[0m 28415.044 ms - 982[0m
+2026-06-27 12:07:15 [INFO]: Starting analysis for 4 reviews
+2026-06-27 12:07:15 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:07:35 [INFO]: Successfully processed and saved analysis history. ID: 6a3f6fafbeb526cb38062cc0
+2026-06-27 12:07:35 [INFO]: [0mPOST /analyze [32m200[0m 19353.770 ms - 1256[0m
+2026-06-27 12:08:03 [INFO]: Starting analysis for 3 reviews
+2026-06-27 12:08:03 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:08:24 [INFO]: Successfully processed and saved analysis history. ID: 6a3f6fe0beb526cb38062cc6
+2026-06-27 12:08:24 [INFO]: [0mPOST /analyze [32m200[0m 20867.073 ms - 982[0m
+2026-06-27 12:09:10 [INFO]: Starting analysis for 3 reviews
+2026-06-27 12:09:10 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:09:32 [INFO]: Successfully processed and saved analysis history. ID: 6a3f7024beb526cb38062ccb
+2026-06-27 12:09:32 [INFO]: [0mPOST /analyze [32m200[0m 21962.816 ms - 982[0m
+2026-06-27 12:11:26 [INFO]: Starting analysis for 3 reviews
+2026-06-27 12:11:26 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:11:51 [INFO]: Successfully processed and saved analysis history. ID: 6a3f70afbeb526cb38062cd0
+2026-06-27 12:11:51 [INFO]: [0mPOST /analyze [32m200[0m 24585.860 ms - 982[0m
+2026-06-27 12:13:44 [INFO]: Starting analysis for 4 reviews
+2026-06-27 12:13:44 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:14:05 [INFO]: Successfully processed and saved analysis history. ID: 6a3f7135beb526cb38062cd5
+2026-06-27 12:14:05 [INFO]: [0mPOST /analyze [32m200[0m 21084.025 ms - 1256[0m
+2026-06-27 12:14:26 [INFO]: Starting analysis for 3 reviews
+2026-06-27 12:14:26 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:14:45 [INFO]: Successfully processed and saved analysis history. ID: 6a3f715dbeb526cb38062cdb
+2026-06-27 12:14:45 [INFO]: [0mPOST /analyze [32m200[0m 19636.086 ms - 982[0m
+2026-06-27 12:16:55 [INFO]: Starting analysis for 5 reviews
+2026-06-27 12:16:55 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:17:23 [INFO]: Successfully processed and saved analysis history. ID: 6a3f71fbbeb526cb38062ce0
+2026-06-27 12:17:23 [INFO]: [0mPOST /analyze [32m200[0m 28882.764 ms - 1654[0m
+2026-06-27 12:17:51 [INFO]: Starting analysis for 6 reviews
+2026-06-27 12:17:51 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:18:20 [INFO]: Successfully processed and saved analysis history. ID: 6a3f7234beb526cb38062ce7
+2026-06-27 12:18:20 [INFO]: [0mPOST /analyze [32m200[0m 28245.105 ms - 1817[0m
+2026-06-27 12:27:03 [INFO]: Starting analysis for 10 reviews
+2026-06-27 12:27:03 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:27:23 [INFO]: Successfully processed and saved analysis history. ID: 6a3f7453beb526cb38062cef
+2026-06-27 12:27:23 [INFO]: [0mPOST /analyze [32m200[0m 19652.000 ms - 2798[0m
+2026-06-27 12:29:16 [INFO]: Starting analysis for 10 reviews
+2026-06-27 12:29:16 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:29:45 [INFO]: Successfully processed and saved analysis history. ID: 6a3f74e1beb526cb38062cfb
+2026-06-27 12:29:45 [INFO]: [0mPOST /analyze [32m200[0m 28964.019 ms - 2537[0m
+2026-06-27 12:31:48 [INFO]: Starting analysis for 10 reviews
+2026-06-27 12:31:48 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:32:18 [INFO]: Successfully processed and saved analysis history. ID: 6a3f757abeb526cb38062d07
+2026-06-27 12:32:18 [INFO]: [0mPOST /analyze [32m200[0m 29253.476 ms - 2968[0m
+2026-06-27 12:32:58 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 12:32:58 [INFO]: Server is running in development mode on port 5000
+2026-06-27 12:32:58 [INFO]: MongoDB Connected: localhost
+2026-06-27 12:34:01 [INFO]: Starting analysis for 10 reviews
+2026-06-27 12:34:01 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:34:29 [INFO]: Successfully processed and saved analysis history. ID: 6a3f75fd1b6dae17de08899b
+2026-06-27 12:34:29 [INFO]: [0mPOST /analyze [32m200[0m 28441.671 ms - 2968[0m
+2026-06-27 12:41:03 [INFO]: Starting analysis for 10 reviews
+2026-06-27 12:41:03 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:41:27 [INFO]: Successfully processed and saved analysis history. ID: 6a3f779f1b6dae17de0889a7
+2026-06-27 12:41:27 [INFO]: [0mPOST /analyze [32m200[0m 23391.241 ms - 2798[0m
+2026-06-27 12:42:29 [INFO]: Starting analysis for 10 reviews
+2026-06-27 12:42:29 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:42:53 [INFO]: Successfully processed and saved analysis history. ID: 6a3f77f51b6dae17de0889b3
+2026-06-27 12:42:53 [INFO]: [0mPOST /analyze [32m200[0m 23423.336 ms - 2968[0m
+2026-06-27 12:46:44 [INFO]: Starting analysis for 10 reviews
+2026-06-27 12:46:44 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:47:15 [INFO]: Successfully processed and saved analysis history. ID: 6a3f78fb1b6dae17de0889bf
+2026-06-27 12:47:15 [INFO]: [0mPOST /analyze [32m200[0m 31017.578 ms - 2616[0m
+2026-06-27 12:47:34 [INFO]: Starting analysis for 10 reviews
+2026-06-27 12:47:34 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:48:05 [INFO]: Successfully processed and saved analysis history. ID: 6a3f792d1b6dae17de0889cb
+2026-06-27 12:48:05 [INFO]: [0mPOST /analyze [32m200[0m 30376.874 ms - 2968[0m
+2026-06-27 12:49:35 [INFO]: Starting analysis for 10 reviews
+2026-06-27 12:49:35 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:50:22 [INFO]: Successfully processed and saved analysis history. ID: 6a3f79b61b6dae17de0889d7
+2026-06-27 12:50:22 [INFO]: [0mPOST /analyze [32m200[0m 47334.793 ms - 2537[0m
+2026-06-27 12:50:35 [INFO]: Starting analysis for 10 reviews
+2026-06-27 12:50:35 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 12:51:28 [INFO]: Successfully processed and saved analysis history. ID: 6a3f79f81b6dae17de0889e3
+2026-06-27 12:51:28 [INFO]: [0mPOST /analyze [32m200[0m 52944.442 ms - 2602[0m
+2026-06-27 13:08:35 [INFO]: Starting analysis for 10 reviews
+2026-06-27 13:08:35 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 13:09:26 [INFO]: Successfully processed and saved analysis history. ID: 6a3f7e2e1b6dae17de0889ef
+2026-06-27 13:09:26 [INFO]: [0mPOST /analyze [32m200[0m 51643.410 ms - 2897[0m
+2026-06-27 14:14:37 [INFO]: Starting analysis for 10 reviews
+2026-06-27 14:14:37 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 14:15:17 [INFO]: Successfully processed and saved analysis history. ID: 6a3f8d9d1b6dae17de0889fb
+2026-06-27 14:15:17 [INFO]: [0mPOST /analyze [32m200[0m 39676.802 ms - 2897[0m
+2026-06-27 15:17:07 [INFO]: Starting analysis for 10 reviews
+2026-06-27 15:17:07 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 15:17:34 [INFO]: Successfully processed and saved analysis history. ID: 6a3f9c361b6dae17de088a07
+2026-06-27 15:17:34 [INFO]: [0mPOST /analyze [32m200[0m 27056.744 ms - 2807[0m

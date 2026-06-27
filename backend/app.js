@@ -56,7 +56,7 @@ app.get('/health', (req, res) => {
 });
 
 // 7. API Routes Setup (will import route here once defined)
-app.use('/api', require('./routes/analysis.route'));
+app.use('/', require('./routes/analysis.route'));
 app.use('/api/history', require('./routes/history.route'));
 
 // 8. 404 Route handler

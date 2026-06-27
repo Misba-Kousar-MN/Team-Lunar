@@ -17,7 +17,7 @@ export default function InputBox({ onSubmit, onUseSample, initialUrl = '' }) {
       return;
     }
     const val = url.toLowerCase();
-    if (val.includes('amazon.')) {
+    if (val.includes('amazon.') || val.includes('amzn.in')) {
       setDetectedPlatform('Amazon');
     } else if (val.includes('flipkart.')) {
       setDetectedPlatform('Flipkart');
@@ -40,7 +40,7 @@ export default function InputBox({ onSubmit, onUseSample, initialUrl = '' }) {
       return;
     }
 
-    if (!val.includes('amazon') && !val.includes('flipkart')) {
+    if (!val.includes('amazon') && !val.includes('flipkart') && !val.includes('amzn.in')) {
       setError('Only Amazon and Flipkart product URLs are supported at this time.');
       return;
     }

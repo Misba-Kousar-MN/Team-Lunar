@@ -79,3 +79,36 @@
 2026-06-27 08:39:36 [ERROR]: Error: Unsupported platform: "www.google.com". Supported platforms: Amazon (amazon.in / amazon.com) or Flipkart (flipkart.com).
     at analyzeReviews (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\controllers\analysis.controller.js:39:11)
     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-06-27 10:08:17 [ERROR]: Error: Can't find /analyze on this server!
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\app.js:64:8
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+2026-06-27 10:39:07 [ERROR]: Error: Can't find / on this server!
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\app.js:64:8
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:646:15
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:265:14)
+2026-06-27 10:39:07 [ERROR]: Error: Can't find /favicon.ico on this server!
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\app.js:64:8
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:646:15
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:265:14)

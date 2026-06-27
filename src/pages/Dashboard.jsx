@@ -51,6 +51,13 @@ export default function Dashboard({ data, onReanalyze, onGoHome }) {
       return true;
     });
   }, [data, filter, searchTerm]);
+  
+  const { genuineReviews, fakeReviews } = useMemo(() => {
+    return {
+      genuineReviews: filteredReviews.filter(r => r.label === 'Genuine'),
+      fakeReviews: filteredReviews.filter(r => r.label === 'Fake')
+    };
+  }, [filteredReviews]);
 
   const handleReanalyzeSubmit = (e) => {
     e.preventDefault();
@@ -62,7 +69,7 @@ export default function Dashboard({ data, onReanalyze, onGoHome }) {
   if (!data) return null;
 
   return (
-    <div className="flex-1 px-4 py-8 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full space-y-8 dark:bg-slate-950 transition-colors duration-300">
+    <div className="flex-1 px-4 py-8 sm:px-6 lg:px-8 max-w-[1400px] mx-auto w-full space-y-8 dark:bg-slate-950 transition-colors duration-300">
       
       {/* Header Info Panel */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b border-slate-200/50 dark:border-slate-800/50 pb-6">
@@ -90,7 +97,7 @@ export default function Dashboard({ data, onReanalyze, onGoHome }) {
               <a 
                 href={data.url} 
                 target="_blank" 
-                rel="noreferrer" 
+                rel="noopener noreferrer" 
                 className="flex items-center gap-1 text-xs text-slate-400 hover:text-brand-500 dark:text-slate-500 dark:hover:text-brand-400 font-medium transition-colors"
               >
                 <span>View Original Listing</span>
@@ -128,53 +135,53 @@ export default function Dashboard({ data, onReanalyze, onGoHome }) {
         <ReviewPieChart genuine={data.genuine} fake={data.fake} />
 
         {/* Metric Card 3: numerical summary statistics */}
-        <div className="flex flex-col p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/50 dark:border-slate-800/50 shadow-sm justify-between transition-all duration-300">
-          <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-4">
+        <div className="flex flex-col p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/50 dark:border-slate-800/50 h-[280px] shadow-[0_2px_8px_rgba(0,0,0,0.04)] justify-between transition-all duration-300">
+          <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-2">
             Auditing Statistics
           </h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4 flex-1 justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-2.5 flex-1 justify-center">
             
             {/* Stat Row 1 */}
-            <div className="flex items-center gap-3.5 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/30">
-              <div className="p-2 bg-brand-500/10 text-brand-500 rounded-lg">
-                <FileText className="h-5 w-5" />
+            <div className="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/30">
+              <div className="p-1.5 bg-brand-500/10 text-brand-500 rounded-lg">
+                <FileText className="h-4.5 w-4.5" />
               </div>
               <div>
                 <span className="text-[10px] font-semibold text-slate-400 dark:text-slate-500 block uppercase tracking-wider">
                   Total Reviews
                 </span>
-                <span className="text-lg font-black text-slate-700 dark:text-slate-100">
+                <span className="text-base font-black text-slate-700 dark:text-slate-100">
                   {stats.total}
                 </span>
               </div>
             </div>
 
             {/* Stat Row 2 */}
-            <div className="flex items-center gap-3.5 p-3 rounded-xl bg-emerald-50/50 dark:bg-emerald-950/10">
-              <div className="p-2 bg-emerald-500/10 text-emerald-500 rounded-lg">
-                <CheckCircle className="h-5 w-5" />
+            <div className="flex items-center gap-3 p-2.5 rounded-xl bg-emerald-50/50 dark:bg-emerald-950/10">
+              <div className="p-1.5 bg-emerald-500/10 text-emerald-500 rounded-lg">
+                <CheckCircle className="h-4.5 w-4.5" />
               </div>
               <div>
                 <span className="text-[10px] font-semibold text-emerald-600/60 dark:text-emerald-500/60 block uppercase tracking-wider">
                   Genuine Reviews
                 </span>
-                <span className="text-lg font-black text-emerald-700 dark:text-emerald-400">
+                <span className="text-base font-black text-emerald-700 dark:text-emerald-400">
                   {stats.genuine}
                 </span>
               </div>
             </div>
 
             {/* Stat Row 3 */}
-            <div className="flex items-center gap-3.5 p-3 rounded-xl bg-rose-50/50 dark:bg-rose-950/10">
-              <div className="p-2 bg-rose-500/10 text-rose-500 rounded-lg">
-                <AlertCircle className="h-5 w-5" />
+            <div className="flex items-center gap-3 p-2.5 rounded-xl bg-rose-50/50 dark:bg-rose-950/10">
+              <div className="p-1.5 bg-rose-500/10 text-rose-500 rounded-lg">
+                <AlertCircle className="h-4.5 w-4.5" />
               </div>
               <div>
                 <span className="text-[10px] font-semibold text-rose-600/60 dark:text-rose-500/60 block uppercase tracking-wider">
                   Flagged Suspicious
                 </span>
-                <span className="text-lg font-black text-rose-700 dark:text-rose-400">
+                <span className="text-base font-black text-rose-700 dark:text-rose-400">
                   {stats.fake}
                 </span>
               </div>
@@ -184,8 +191,11 @@ export default function Dashboard({ data, onReanalyze, onGoHome }) {
         </div>
       </div>
 
+      {/* Subtle Divider between Charts Grid and Reviews Section */}
+      <hr className="border-slate-200/50 dark:border-slate-800/40 my-12" />
+
       {/* Review Section */}
-      <div className="space-y-6">
+      <div className="space-y-6 mt-12">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-slate-200/50 dark:border-slate-800/50 pb-4">
           <h2 className="text-lg font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
             <span>Classified Reviews List</span>
@@ -195,7 +205,7 @@ export default function Dashboard({ data, onReanalyze, onGoHome }) {
           </h2>
 
           {/* Controls: search and tabs */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+          <div className="flex items-center gap-3 w-full sm:w-auto">
             
             {/* Search within reviews */}
             <div className="relative flex items-center bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-1.5 max-w-xs w-full transition-colors">
@@ -248,10 +258,52 @@ export default function Dashboard({ data, onReanalyze, onGoHome }) {
 
         {/* Reviews Grid */}
         {filteredReviews.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {filteredReviews.map((review) => (
-              <ReviewCard key={review.id} review={review} />
-            ))}
+          <div className="flex flex-col gap-8 w-full">
+            {/* Genuine Reviews Section */}
+            {genuineReviews.length > 0 && (
+              <div className="space-y-4">
+                <div className="flex items-center gap-4 select-none">
+                  <div className="h-[1px] flex-1 bg-slate-200 dark:bg-slate-800/80"></div>
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 flex items-center gap-2 px-2 shrink-0">
+                    <span>🟢 Genuine Reviews</span>
+                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-850 text-slate-500 dark:text-slate-400">
+                      {genuineReviews.length}
+                    </span>
+                  </h3>
+                  <div className="h-[1px] flex-1 bg-slate-200 dark:bg-slate-800/80"></div>
+                </div>
+                <div className="flex flex-col gap-4 items-center w-full">
+                  {genuineReviews.map((review) => (
+                    <div key={review.id} className="w-[92%] max-w-4xl">
+                      <ReviewCard review={review} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Fake Reviews Section */}
+            {fakeReviews.length > 0 && (
+              <div className="space-y-4">
+                <div className="flex items-center gap-4 select-none">
+                  <div className="h-[1px] flex-1 bg-slate-200 dark:bg-slate-800/80"></div>
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 flex items-center gap-2 px-2 shrink-0">
+                    <span>🔴 Fake Reviews</span>
+                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-850 text-slate-500 dark:text-slate-400">
+                      {fakeReviews.length}
+                    </span>
+                  </h3>
+                  <div className="h-[1px] flex-1 bg-slate-200 dark:bg-slate-800/80"></div>
+                </div>
+                <div className="flex flex-col gap-4 items-center w-full">
+                  {fakeReviews.map((review) => (
+                    <div key={review.id} className="w-[92%] max-w-4xl">
+                      <ReviewCard review={review} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         ) : (
           <div className="flex flex-col items-center justify-center py-16 text-center bg-white dark:bg-slate-900/40 rounded-2xl border border-dashed border-slate-200 dark:border-slate-800">

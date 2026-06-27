@@ -17,17 +17,20 @@ export const analyzeProduct = async (urlOrReviews) => {
 
   // 1. Determine if input is a URL or direct reviews
   if (typeof urlOrReviews === 'string') {
-    const normalized = urlOrReviews.toLowerCase();
+    const cleanUrl = (urlStr) => {
+      try {
+        const u = new URL(urlStr);
+        return (u.origin + u.pathname).replace(/\/$/, '').toLowerCase();
+      } catch {
+        return urlStr.replace(/\/$/, '').toLowerCase();
+      }
+    };
     
-    // Match against sample products
-    matchedProduct = sampleProducts.find(p => 
-      normalized.includes(p.id) || 
-      normalized.includes(p.platform.toLowerCase()) ||
-      p.url.toLowerCase().includes(normalized) ||
-      (normalized.includes('echo') && p.id === 'amazon-echo') ||
-      (normalized.includes('tv') && p.id === 'flipkart-tv') ||
-      ((normalized.includes('iphone') || normalized.includes('apple')) && p.id === 'iphone-15')
-    );
+    const target = cleanUrl(urlOrReviews);
+    
+    // Match against sample products (clean comparison)
+    matchedProduct = sampleProducts.find(p => cleanUrl(p.url) === target) ||
+                     sampleProducts.find(p => target.includes(p.id));
 
     if (matchedProduct) {
       reviewsToAnalyze = matchedProduct.reviews.map(r => r.text);
@@ -50,21 +53,39 @@ export const analyzeProduct = async (urlOrReviews) => {
     const response = await api.post('/analyze', { reviews: reviewsToAnalyze });
     const data = response.data;
     
+    const total = data.statistics?.totalReviews || reviewsToAnalyze.length || 0;
+    const fakeCount = data.statistics?.fakeReviews || 0;
+    const realCount = data.statistics?.realReviews || 0;
+    const genuinePercent = total > 0 ? Math.round((realCount / total) * 100) : 0;
+    const fakePercent = total > 0 ? Math.round((fakeCount / total) * 100) : 0;
+    
+    const analysisList = data.analysis || data.reviews || [];
+ 
     // Transform API response to match our display requirements
     return {
       productName: matchedProduct ? matchedProduct.name : getProductNameFromUrl(urlOrReviews),
       platform: matchedProduct ? matchedProduct.platform : getPlatformFromUrl(urlOrReviews),
-      url: typeof urlOrReviews === 'string' && urlOrReviews.startsWith('http') ? urlOrReviews : '',
-      trust_score: data.trust_score,
-      genuine: data.genuine,
-      fake: data.fake,
-      reviews: data.reviews.map((rev, index) => {
+      url: typeof urlOrReviews === 'string' && urlOrReviews.startsWith('http') ? urlOrReviews : (matchedProduct?.url || ''),
+      trust_score: data.trustScore !== undefined ? data.trustScore * 10 : (data.trust_score !== undefined ? data.trust_score : 0),
+      genuine: genuinePercent,
+      fake: fakePercent,
+      reviews: analysisList.map((rev, index) => {
         const originalReview = matchedProduct?.reviews[index] || fallbackAnalysis.reviews[index];
+        let displayLabel = rev.label || 'Genuine';
+        if (rev.prediction === 'Real') displayLabel = 'Genuine';
+        if (rev.prediction === 'Fake') displayLabel = 'Fake';
+        
+        let rawConf = rev.confidence !== undefined ? rev.confidence : 1.0;
+        // Normalize to a decimal (0.0 - 1.0)
+        if (rawConf > 1.0) {
+          rawConf = rawConf / 100;
+        }
+ 
         return {
           id: `rev-${index}`,
-          text: rev.text,
-          label: rev.label, // 'Fake' or 'Genuine'
-          confidence: rev.confidence,
+          text: rev.review || rev.text || '',
+          label: displayLabel,
+          confidence: rawConf,
           reason: rev.reason || originalReview?.reason || "Classified by neural linguistic checker.",
           keywords: originalReview?.keywords || []
         };

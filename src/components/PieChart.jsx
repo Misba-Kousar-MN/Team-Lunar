@@ -24,7 +24,7 @@ export default function ReviewPieChart({ genuine, fake }) {
   };
 
   return (
-    <div className="flex flex-col p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/50 dark:border-slate-800/50 shadow-sm h-[320px] transition-all duration-300">
+    <div className="flex flex-col p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/50 dark:border-slate-800/50 h-[280px] shadow-[0_2px_8px_rgba(0,0,0,0.04)] transition-all duration-300">
       <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-2">
         Review Classification Breakdown
       </h3>
@@ -36,8 +36,8 @@ export default function ReviewPieChart({ genuine, fake }) {
               data={data}
               cx="50%"
               cy="50%"
-              innerRadius={55}
-              outerRadius={75}
+              innerRadius={44}
+              outerRadius={60}
               paddingAngle={4}
               dataKey="value"
             >
@@ -53,7 +53,7 @@ export default function ReviewPieChart({ genuine, fake }) {
             <Tooltip content={<CustomTooltip />} />
             <Legend 
               verticalAlign="bottom" 
-              height={36} 
+              height={30} 
               iconType="circle"
               iconSize={8}
               formatter={(value, entry) => (
@@ -66,11 +66,11 @@ export default function ReviewPieChart({ genuine, fake }) {
         </ResponsiveContainer>
 
         {/* Center Text displaying dominant review label */}
-        <div className="absolute flex flex-col items-center justify-center pointer-events-none">
-          <span className="text-2xl font-bold text-slate-700 dark:text-slate-200">
+        <div className="absolute flex flex-col items-center justify-center pointer-events-none mb-6">
+          <span className="text-xl font-bold text-slate-700 dark:text-slate-200">
             {genuine >= fake ? `${genuine}%` : `${fake}%`}
           </span>
-          <span className="text-[10px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+          <span className="text-[9px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
             {genuine >= fake ? 'Genuine' : 'Fake'}
           </span>
         </div>

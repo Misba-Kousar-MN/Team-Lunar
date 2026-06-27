@@ -29,6 +29,9 @@ const PROVIDER_MAP = {
 
   'www.flipkart.com': flipkartProvider,
   'flipkart.com':     flipkartProvider,
+  'dl.flipkart.com':   flipkartProvider,
+  'amzn.in':          amazonProvider,
+  'www.amzn.in':      amazonProvider,
 };
 
 /**

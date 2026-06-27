@@ -69,7 +69,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+    <div className="min-h-screen flex flex-col bg-[#F6F8FC] text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
       
       {/* Navigation header bar */}
       <Navbar 
@@ -85,7 +85,7 @@ export default function App() {
         
         {/* Loading Spinner / Multi-Step Overlay */}
         {isLoading ? (
-          <div className="flex-1 flex items-center justify-center bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+          <div className="flex-1 flex items-center justify-center bg-[#F6F8FC] dark:bg-slate-950 transition-colors duration-300">
             <Loader />
           </div>
         ) : error ? (
