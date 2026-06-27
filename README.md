@@ -1,36 +1,16 @@
-# 🚀 Hackathon Repository
+# React + Vite
 
-Welcome to the Hackathon!
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## 📋 Instructions
+Currently, two official plugins are available:
 
-1. Click the **Fork** button at the top-right corner of this repository.
-2. Rename your forked repository to your **Team Name** (or **Team ID**, if instructed).
-3. Clone your forked repository:
-   ```bash
-   git clone https://github.com/<your-github-username>/<team-name>.git
-   ```
-4. Build your project and commit your changes.
-5. Push your code to your forked repository:
-   ```bash
-   git add .
-   git commit -m "Initial project submission"
-   git push origin main
-   ```
-6. Submit your GitHub repository link before the submission deadline.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## 📁 Repository Naming
+## React Compiler
 
-Use your **Team Name** as the repository name.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-**Examples:**
-- Team Alpha → `Team-Alpha`
-- Team 07 → `Team-07`
+## Expanding the Oxlint configuration
 
-## ⚠️ Important
-
-- Do **not** push code to the original repository.
-- Work only in your own forked repository.
-- Ensure your final code is pushed before the submission deadline.
-
-Good luck and happy coding! 🚀
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
