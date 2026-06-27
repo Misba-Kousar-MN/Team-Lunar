@@ -13,12 +13,12 @@
   --color-brand-800: #1d2bb8;
   --color-brand-900: #1c2691;
   --color-brand-950: #111757;
-  
+
   --color-slate-950: #020617;
-  
+
   --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --animate-spin-slow: spin 8s linear infinite;
-  
+
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -37,9 +37,11 @@
 @utility glow-green {
   box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
 }
+
 @utility glow-yellow {
   box-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
 }
+
 @utility glow-red {
   box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
 }
@@ -53,6 +55,7 @@
     transform: translateY(1rem);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -98,6 +101,7 @@ body {
   transition-duration: 300ms;
 }
 
+/* dark mode */
 .dark body {
   background-color: #020617;
   color: #f8fafc;
