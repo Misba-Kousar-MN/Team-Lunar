@@ -17,6 +17,21 @@ const server = app.listen(config.port, () => {
   logger.info(`Server is running in ${config.env} mode on port ${config.port}`);
 });
 
+// Graceful handling for port-in-use conflicts (EADDRINUSE).
+// This prevents the raw uncaught exception crash and prints a clear diagnostic.
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    logger.error(
+      `Port ${config.port} is already in use. ` +
+      `Kill the existing process before starting again. ` +
+      `Run: npx kill-port ${config.port}`
+    );
+    process.exit(1);
+  } else {
+    throw err; // Re-throw unexpected errors
+  }
+});
+
 // Handle unhandled promise rejections globally
 process.on('unhandledRejection', (err) => {
   logger.error('UNHANDLED REJECTION! Shutting down...');

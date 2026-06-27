@@ -192,3 +192,146 @@
 2026-06-26 23:27:26 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
 2026-06-26 23:28:01 [INFO]: Successfully processed and saved analysis history. ID: 6a3ebda947e29fb63714cac8
 2026-06-26 23:28:01 [INFO]: [0mPOST /api/analyze [32m200[0m 35151.361 ms - 795[0m
+2026-06-27 00:08:01 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 00:08:01 [INFO]: Server is running in development mode on port 5000
+2026-06-27 00:08:01 [INFO]: MongoDB Connected: localhost
+2026-06-27 00:09:30 [INFO]: Starting analysis for 6 reviews
+2026-06-27 00:09:30 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 00:09:52 [INFO]: Successfully processed and saved analysis history. ID: 6a3ec778d0ad79be50423774
+2026-06-27 00:09:52 [INFO]: [0mPOST /api/analyze [32m200[0m 21987.772 ms - 1587[0m
+2026-06-27 00:11:08 [INFO]: [0mGET /api/history [32m200[0m 29.932 ms - 6349[0m
+2026-06-27 00:11:08 [INFO]: [0mGET /api/history [36m304[0m 13.743 ms - -[0m
+2026-06-27 00:26:20 [INFO]: Starting analysis for 6 reviews
+2026-06-27 00:26:20 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 00:26:43 [INFO]: Successfully processed and saved analysis history. ID: 6a3ecb6bd0ad79be504237a2
+2026-06-27 00:26:43 [INFO]: [0mPOST /api/analyze [32m200[0m 23319.574 ms - 1587[0m
+2026-06-27 00:27:37 [INFO]: [0mGET /api/history [32m200[0m 12.544 ms - 8754[0m
+2026-06-27 00:27:37 [INFO]: [0mGET /api/history [36m304[0m 18.473 ms - -[0m
+2026-06-27 00:31:26 [INFO]: [0mGET /api/history [36m304[0m 8.700 ms - -[0m
+2026-06-27 00:31:26 [INFO]: [0mGET /api/history [36m304[0m 10.625 ms - -[0m
+2026-06-27 00:36:00 [INFO]: Starting analysis for 3 reviews
+2026-06-27 00:36:00 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 00:36:30 [INFO]: [0mPOST /api/analyze [0m-[0m - ms - -[0m
+2026-06-27 00:36:33 [INFO]: Successfully processed and saved analysis history. ID: 6a3ecdb9d0ad79be5042380e
+2026-06-27 00:54:44 [INFO]: Starting analysis for 3 reviews
+2026-06-27 00:54:44 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 00:55:09 [INFO]: Successfully processed and saved analysis history. ID: 6a3ed214d0ad79be50423813
+2026-06-27 00:55:09 [INFO]: [0mPOST /api/analyze [32m200[0m 24600.289 ms - 639[0m
+2026-06-27 01:03:57 [INFO]: Starting analysis for 6 reviews
+2026-06-27 01:03:57 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 01:04:27 [INFO]: [0mPOST /api/analyze [0m-[0m - ms - -[0m
+2026-06-27 01:04:35 [INFO]: Successfully processed and saved analysis history. ID: 6a3ed44bd0ad79be50423818
+2026-06-27 01:04:35 [INFO]: Starting analysis for 6 reviews
+2026-06-27 01:04:35 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 01:05:05 [INFO]: [0mPOST /api/analyze [0m-[0m - ms - -[0m
+2026-06-27 01:05:10 [INFO]: Successfully processed and saved analysis history. ID: 6a3ed46ed0ad79be50423820
+2026-06-27 01:18:14 [INFO]: Starting analysis for 6 reviews
+2026-06-27 01:18:14 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 01:18:44 [INFO]: [0mPOST /api/analyze [0m-[0m - ms - -[0m
+2026-06-27 01:18:45 [INFO]: Successfully processed and saved analysis history. ID: 6a3ed79dd0ad79be50423828
+2026-06-27 01:18:54 [INFO]: Starting analysis for 6 reviews
+2026-06-27 01:18:54 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 01:19:24 [INFO]: [0mPOST /api/analyze [0m-[0m - ms - -[0m
+2026-06-27 01:19:24 [INFO]: Successfully processed and saved analysis history. ID: 6a3ed7c4d0ad79be50423830
+2026-06-27 01:22:39 [ERROR]: Error: Can't find / on this server!
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\app.js:64:8
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+2026-06-27 01:22:39 [INFO]: [0mGET / [33m404[0m 5.639 ms - 1468[0m
+2026-06-27 01:22:39 [ERROR]: Error: Can't find /favicon.ico on this server!
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\app.js:64:8
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+2026-06-27 01:22:39 [INFO]: [0mGET /favicon.ico [33m404[0m 1.381 ms - 1490[0m
+2026-06-27 01:22:57 [INFO]: [0mGET /health [32m200[0m 0.875 ms - 89[0m
+2026-06-27 01:25:35 [INFO]: Starting analysis for 6 reviews
+2026-06-27 01:25:35 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 01:26:05 [INFO]: [0mPOST /api/analyze [0m-[0m - ms - -[0m
+2026-06-27 01:26:05 [INFO]: Successfully processed and saved analysis history. ID: 6a3ed955d0ad79be50423838
+2026-06-27 01:28:58 [INFO]: [0mGET /health [32m200[0m 0.723 ms - 89[0m
+2026-06-27 01:29:20 [INFO]: Starting analysis for 3 reviews
+2026-06-27 01:29:20 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 01:29:44 [INFO]: Successfully processed and saved analysis history. ID: 6a3eda30d0ad79be50423840
+2026-06-27 01:29:44 [INFO]: [0mPOST /api/analyze [32m200[0m 23948.556 ms - 824[0m
+2026-06-27 01:34:09 [INFO]: Starting analysis for 6 reviews
+2026-06-27 01:34:09 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 01:34:46 [INFO]: Successfully processed and saved analysis history. ID: 6a3edb5ed0ad79be50423845
+2026-06-27 01:34:46 [INFO]: [0mPOST /api/analyze [32m200[0m 36915.395 ms - 1587[0m
+2026-06-27 08:27:59 [WARN]: MongoDB disconnected! Attempting to reconnect...
+2026-06-27 08:28:09 [INFO]: MongoDB reconnected!
+2026-06-27 08:35:51 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 08:35:51 [INFO]: Server is running in development mode on port 5000
+2026-06-27 08:35:51 [INFO]: MongoDB Connected: localhost
+2026-06-27 08:36:17 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 08:36:17 [INFO]: Server is running in development mode on port 5000
+2026-06-27 08:36:17 [INFO]: MongoDB Connected: localhost
+2026-06-27 08:36:43 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 08:36:43 [INFO]: Server is running in development mode on port 5000
+2026-06-27 08:36:43 [INFO]: MongoDB Connected: localhost
+2026-06-27 08:37:03 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 08:37:03 [INFO]: Server is running in development mode on port 5000
+2026-06-27 08:37:03 [INFO]: MongoDB Connected: localhost
+2026-06-27 08:37:25 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 08:37:25 [INFO]: Server is running in development mode on port 5000
+2026-06-27 08:37:25 [INFO]: MongoDB Connected: localhost
+2026-06-27 08:37:50 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 08:37:50 [INFO]: Server is running in development mode on port 5000
+2026-06-27 08:37:50 [INFO]: MongoDB Connected: localhost
+2026-06-27 08:38:08 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 08:38:08 [INFO]: Server is running in development mode on port 5000
+2026-06-27 08:38:08 [INFO]: MongoDB Connected: localhost
+2026-06-27 08:39:13 [INFO]: [0mGET /health [32m200[0m 1.667 ms - 89[0m
+2026-06-27 08:39:13 [INFO]: Starting analysis for 3 reviews
+2026-06-27 08:39:13 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 08:39:36 [INFO]: Successfully processed and saved analysis history. ID: 6a3f3ef07c155ed4e646cea1
+2026-06-27 08:39:36 [INFO]: [0mPOST /api/analyze [32m200[0m 23488.821 ms - 874[0m
+2026-06-27 08:39:36 [ERROR]: Error: Request must include either "reviews" (array of strings) or "productUrl" (Amazon / Flipkart product page URL).
+    at validate (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\middlewares\validation.middleware.js:8:17)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\route.js:149:13)
+    at middleware (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-06-27 08:39:36 [INFO]: [0mPOST /api/analyze [33m400[0m 2.405 ms - 969[0m
+2026-06-27 08:39:36 [ERROR]: Error: Provide either "reviews" or "productUrl", not both.
+    at validate (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\middlewares\validation.middleware.js:8:17)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express\lib\router\route.js:149:13)
+    at middleware (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-06-27 08:39:36 [INFO]: [0mPOST /api/analyze [33m400[0m 2.893 ms - 851[0m
+2026-06-27 08:39:36 [INFO]: Product URL mode: fetching reviews for https://www.google.com/search?q=product
+2026-06-27 08:39:36 [ERROR]: Error: Unsupported platform: "www.google.com". Supported platforms: Amazon (amazon.in / amazon.com) or Flipkart (flipkart.com).
+    at analyzeReviews (C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\controllers\analysis.controller.js:39:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-06-27 08:39:36 [INFO]: [0mPOST /api/analyze [33m400[0m 1.599 ms - 566[0m
+2026-06-27 08:39:36 [INFO]: [0mGET /api/history [32m200[0m 14.630 ms - 27457[0m
+2026-06-27 08:39:54 [INFO]: Product URL mode: fetching reviews for https://www.amazon.in/dp/B09XYZ1234
+2026-06-27 08:39:54 [INFO]: Provider returned 12 reviews for https://www.amazon.in/dp/B09XYZ1234
+2026-06-27 08:39:54 [INFO]: Starting analysis for 12 reviews
+2026-06-27 08:39:54 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 08:40:10 [INFO]: Successfully processed and saved analysis history. ID: 6a3f3f127c155ed4e646ceef
+2026-06-27 08:40:10 [INFO]: [0mPOST /api/analyze [32m200[0m 15556.337 ms - 3215[0m
+2026-06-27 08:45:44 [INFO]: Attempting to connect to MongoDB at: mongodb://localhost:27017/fake-reviews-detector
+2026-06-27 08:45:44 [INFO]: Server is running in development mode on port 5000
+2026-06-27 08:45:44 [INFO]: MongoDB Connected: localhost
+2026-06-27 08:46:26 [INFO]: [0mGET /health [32m200[0m 4.940 ms - 89[0m
+2026-06-27 08:54:01 [INFO]: Product URL mode: fetching reviews for https://www.amazon.in/dp/B09XYZ1234
+2026-06-27 08:54:01 [INFO]: Provider returned 12 reviews for https://www.amazon.in/dp/B09XYZ1234
+2026-06-27 08:54:01 [INFO]: Starting analysis for 12 reviews
+2026-06-27 08:54:01 [DEBUG]: Spawning Python process: python C:\Users\User\Desktop\TL-Backend\Team-Lunar\backend\python\analyze.py
+2026-06-27 08:54:21 [INFO]: Successfully processed and saved analysis history. ID: 6a3f4265b80a59bdc8c2a10b
+2026-06-27 08:54:21 [INFO]: [0mPOST /api/analyze [32m200[0m 19456.036 ms - 3215[0m
